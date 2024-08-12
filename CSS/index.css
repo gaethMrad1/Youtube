@@ -1,0 +1,311 @@
+/* Glube Rulse */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto","Arial",sans-serif;
+}
+.contener {
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 98%;
+}
+/* Gluble Rulse */
+/* Start Header */
+header {
+    display: flex;
+    height: 56px;
+    align-items: center;
+}
+header i {
+    cursor: pointer;
+}
+header .contener i {
+    font-weight: 300;
+}
+header .contener {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .contener .left-header {
+    display: flex;
+    align-items: center;
+}
+header .left-header i {
+    font-weight: 300;
+}
+header .contener .left-header img {
+    width: 115px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+header .contener .midle-header {   
+    margin: 0 5%;    
+    flex-basis: 688px;
+}
+header .contener .midle-header form{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    flex: 1;
+}
+header .contener .midle-header form input {
+    outline: none;
+    border: 1px solid #ccc;
+    border-right: none;
+    height: 100%;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    padding: 2px 6px;
+    margin-left: 40px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+header .contener .midle-header form button {
+    height: 40px;
+    width: 64px;
+    border: 1px solid #d3d3d3;
+    background-color: #f8f8f8;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    border-top-right-radius:2px;
+    border-bottom-right-radius:2px;
+    transition-duration: 0.1s;
+}
+header .contener .midle-header form button:hover {
+    border-color: #c6c6c6;
+    background-color: #f0f0f0;
+    box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
+}
+
+header .contener .midle-header form button i {
+    width: 24px;
+    height: 24px;
+    color: #030303;
+}
+header .contener .right-header {
+    display: flex;
+    align-items: center;
+}
+header .contener .right-header i {
+    padding-right: 22.5px;
+    font-size: 27px;
+}
+/* End Header */
+/* Start Main */
+main {
+    display: flex;
+    height: calc(100vh - 56px);
+}
+main aside {
+    height: 100%;
+    padding-right: 10px;
+    width: 250px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+main aside .icons {
+    border-bottom: 1px solid #0000001a;
+    padding: 10px 0;
+}
+main aside .icons a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #222;
+    padding: 10px 10px 10px 20px;
+    transition-duration: 0.5s;
+}
+main aside .icons i {
+    font-weight: 300;
+}
+main aside .more i {
+    font-weight: 300;
+}
+main aside .icons a:hover {
+    background-color: #eee;
+}
+main aside .icons a span {
+    margin-left: 20px;
+}
+.one {
+    background-color: #d3d3d3;
+}
+main aside hr {
+    border: 1px solid #222;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    margin: 10px 0;
+}
+footer {
+    padding: 10px 10px 10px 20px;
+    color: #909090;
+}
+.subscriptions {
+    border-bottom: 1px solid #0000001a;
+    padding: 10px 0;
+}
+.subscriptions h2 {
+    padding: 8px 24px;
+    color: #606060;
+    font-weight: 500;
+    font-size: 14px;
+}
+.subscriptions a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #222;
+    padding: 10px 10px 10px 20px;
+    transition-duration: 0.5s;
+}
+.subscriptions a:hover {
+    background-color: #eee;
+}
+.subscriptions a img {
+    width: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.subscriptions a span {
+    margin-left: 20px;
+}
+section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 20px;
+    overflow-y: auto;
+    perspective: 400px;
+    border-top: 1px solid #ddd;
+}
+section .video {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+section .video:hover {
+    box-shadow: 0px 0px 10px 1px #ccc;
+}
+
+section .video .img {
+    max-width: 100%;
+}
+section .video .text {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+section .video .text img {
+    width: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+section .video .text p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 500;
+    padding: 0 10px;
+}
+section .video .info {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 8px;
+    line-height: 1.5;
+    color: #606060;
+    font-size: 12px;
+}
+section .video .info span {
+    transition-duration: 0.1s;
+}
+section .video .info span:hover {
+    color: #222;
+}
+/* End Main */
+/* Start Media */
+@media (max-width: 1024px) {
+    main aside {
+        width: 72px;
+        padding: 0px;
+    }
+    main aside .icons2 {
+        border-bottom: none;
+    }
+    main aside .icons2 a {
+        width: 72px;
+        padding: 16px 0 14px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+    main aside .icons2 a span {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .icon2,
+    .subscriptions,
+    footer {
+        display: none;
+    }
+    main aside .icons2 .libr {
+        display: flex !important;
+    }
+}
+@media (max-width: 791px) {
+    main aside {
+        display: none;
+    }
+}
+@media (max-width: 690px) {
+    header .midle-header {
+        display: none;
+    }
+    header .right-header .ser {
+        display: block !important;
+    }
+}
+@media (max-width: 426px) {
+    .left-header i {
+        font-size: 14px;
+    }
+    header .contener .right-header i {
+        font-size: 20px;
+    }
+    header .contener .right-header {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 376px) {
+    header .contener .left-header img {
+        width: 80px;
+    }
+}
+/* End Media */
